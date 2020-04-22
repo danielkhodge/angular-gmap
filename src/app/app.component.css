@@ -1,0 +1,13 @@
+#map {
+    height: 500px;
+    width: 100%;
+  }
+nav-link {
+    font-size: large;
+    cursor: pointer;
+  }
+  
+navbar-light navbar-nav nav-link.active {
+    color: #007ACC
+  }
+  
