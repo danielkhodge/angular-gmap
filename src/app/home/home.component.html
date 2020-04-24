@@ -1,13 +1,15 @@
-<p>From Google Earth, select a location on the map by simply left-mouse clicking. A gray icon will appear at the exact location. Click this icon again and a blue icon will appear with the exact negative and positive of the location.</p>
+<p>From Google Maps, select a location on the map by simply left-mouse clicking. A gray icon will appear at the exact location. Click this icon again and a blue icon will appear with the exact negative and positive of the location.</p>
 
 <div>
-    Input Latitude: <input type="number" ng-bind="lat" value="{{latitude}}"/>
+    Input Latitude: <input type="number" [(ngModel)]='latitude'/>
 </div>
 <div>
-    Input Longitude: <input type="number" ng-bind="lng" value="{{longitude}}"/>
+    Input Longitude: <input type="number" [(ngModel)]='longitude'/>
 </div>
 <div>
-    <button (click)="mapInitializer()">View Location</button>
+    <button (click)="addLocation()">View Location</button>
 </div>
-
+<div>
+  <h4>Searching coordinates {{latitude}} and {{longitude}}</h4>
+</div>
 <div #mapContainer id="map"></div>
